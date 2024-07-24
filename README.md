@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# How I made this base
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This base is created with the intention for the project to be deployed on _Render_ and _Vercel_.
 
-## Available Scripts
+## Part I
 
-In the project directory, you can run:
+1. Inside a directory that's not pushed to git, ran _npx create-react-app app-name_; this is going to be the main directory.
+1. Created the _client_ folder and moved everything there.
+1. Ran the command _cd client npm i axios bootstrap bootstrap-icons react-router-dom_ to add all the needed dependencies.
+1. Deleted defaulr React files that are not needed and created the _components_ folder inside _src_.
+1. Inside _index.js_ imported Bootstrap styles and scripts.
+1. Created _.env_ and included it in _.gitignore_; also craeted _example.env_ for reference.
 
-### `npm start`
+## Part II
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Created the _server_ folder inside the main directory.
+1. Ran the commands _cd server_ and _npm init -y_.
+1. Ran the command _npm i express dotenv mongoose nodemon bcryptjs jsonwebtoken validator cors_.
+1. Created _.gitignore_ and included _node_modules_ inside it.
+1. Created _config.env_ and included it inside _.gitignore_; also created _example.env_ for reference.
+1. Created _index.js_ and _server.js_ files.
+1. Inside _package.json_, added _"start": "nodemon server.js"_ under _scripts_.
+1. Created the following folders: _models, controllers, routes, utils_.
+1. Set up _index.js_ and _server.js_ and _utils_ following the guides below.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Guides and Tutorials Used
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. _[Express](https://expressjs.com/en/5x/api.html)_ docs for creating an _express_ app.
+1. _[.env](https://medium.com/@akhilanand.ak01/simplify-your-node-js-configuration-with-dotenv-env-ee371ad6bf9a)_ file creation guide.
+1. _[Mongoose](https://mongoosejs.com/docs/connections.html)_ docs for connecting to the DB.
+1. _[JWT](https://www.freecodecamp.org/news/how-to-secure-your-mern-stack-application/)_ (used for authentication and authorisation) creation totorial.
+1. _[JWT](https://medium.com/@vkcivil62p/basics-of-jwt-and-how-to-decode-jwt-tokens-in-node-97c2975266e9)_ decoding tutorial.
+1. _[JWT + localStorage](https://medium.com/@giwon.yi339/how-to-store-jwt-token-in-local-storage-for-react-b0957686b75c) setup; it's the quickest but not the safest and should not be used in actual production, as explained [here](https://medium.com/kanlanc/heres-why-storing-jwt-in-local-storage-is-a-great-mistake-df01dad90f9e).
+1. _[Axios](https://dev.to/techcheck/creating-a-react-node-and-express-app-1ieg)_ setup for connecting BE to FE.
+1. _[Deployment](https://medium.com/@yashpatel54257/how-to-deploy-a-mern-app-on-vercel-635683167e30)_ tutorial for deploying BE on Render and FE on Vercel.
+1. _[Vercel's CORS](https://vercel.com/guides/how-to-enable-cors#enabling-cors-using-vercel.json) setup details needed for deployment.
