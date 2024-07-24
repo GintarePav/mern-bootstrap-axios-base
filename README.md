@@ -30,7 +30,7 @@ This base is created with the intention for the project to be deployed on _Rende
 1. _[Mongoose](https://mongoosejs.com/docs/connections.html)_ docs for connecting to the DB.
 1. _[JWT](https://www.freecodecamp.org/news/how-to-secure-your-mern-stack-application/)_ (used for authentication and authorisation) creation totorial.
 1. _[JWT](https://medium.com/@vkcivil62p/basics-of-jwt-and-how-to-decode-jwt-tokens-in-node-97c2975266e9)_ decoding tutorial.
-1. _[JWT + localStorage](https://medium.com/@giwon.yi339/how-to-store-jwt-token-in-local-storage-for-react-b0957686b75c) setup; it's the quickest but not the safest and should not be used in actual production, as explained [here](https://medium.com/kanlanc/heres-why-storing-jwt-in-local-storage-is-a-great-mistake-df01dad90f9e).
+1. _[JWT + localStorage](https://medium.com/@giwon.yi339/how-to-store-jwt-token-in-local-storage-for-react-b0957686b75c)_ setup; it's the quickest but not the safest and should not be used in actual production, as explained [here](https://medium.com/kanlanc/heres-why-storing-jwt-in-local-storage-is-a-great-mistake-df01dad90f9e).
 1. _[Axios](https://dev.to/techcheck/creating-a-react-node-and-express-app-1ieg)_ setup for connecting BE to FE.
 1. _[Deployment](https://medium.com/@yashpatel54257/how-to-deploy-a-mern-app-on-vercel-635683167e30)_ tutorial for deploying BE on Render and FE on Vercel.
-1. _[Vercel's CORS](https://vercel.com/guides/how-to-enable-cors#enabling-cors-using-vercel.json) setup details needed for deployment.
+1. _[Vercel's CORS](https://vercel.com/guides/how-to-enable-cors#enabling-cors-using-vercel.json)_ setup details needed for deployment.
